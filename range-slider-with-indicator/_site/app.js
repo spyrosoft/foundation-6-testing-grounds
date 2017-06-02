@@ -1,5 +1,4 @@
-$('.affects-indicator')
-	.on('changed.zf.slider', update_indicator);
+$('.slider').on('changed.zf.slider', update_indicator);
 
 function update_indicator() {
 	var indicator_affect
