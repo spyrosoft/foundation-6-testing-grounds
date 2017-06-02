@@ -1,0 +1,25 @@
+!!!
+%html.no-js{lang: 'en-US'}
+  %head
+    %meta{content: 'text/html; charset=UTF-8', 'http-equiv' => 'Content-Type'}
+    %meta{charset: 'utf-8'}
+    %meta{content: 'ie=edge', 'http-equiv' => 'x-ua-compatible'}
+    %meta{content: 'width=device-width, initial-scale=1', name: 'viewport'}
+    %title #{page.title}
+    -if page.description
+      %meta{name: 'description', content: page.description}
+    %link{href: '../../foundation.min.css', rel: 'stylesheet'}
+    -if page.stylesheet
+      %link{href: page.stylesheet, rel: 'stylesheet'}
+    %script{src: '../../jquery.min.js'}
+  %body
+    ~ content
+    %script{src: '../../foundation.min.js'}
+    -if page.include_utilities
+      %script{src: '../../utilities.js'}
+    -if page.script
+      %script{src: page.script}
+    -if page.script2
+      %script{src: page.script2}
+    :javascript
+      $(document).foundation();

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Template</title>
+    <link href="../../foundation.min.css" rel="stylesheet">
+    <link href="app.css" rel="stylesheet">
+    <script src="../../jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="columns pad-top">
+        <div class="slider with-indicator" data-click-select="false" data-initial-start="40" data-slider>
+          <span class="slider-fill"></span>
+          <span class="slider-handle" data-slider-handle role="slider"></span>
+          <span class="indicator"></span>
+          <input type="hidden">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns">
+        <div class="slider affects-indicator" data-changed-delay="4" data-click-select="false" data-initial-start="60" data-slider>
+          <span class="slider-fill"></span>
+          <span class="slider-handle" data-slider-handle role="slider"></span>
+          <input type="hidden">
+        </div>
+      </div>
+    </div>
+    <script src="../../foundation.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

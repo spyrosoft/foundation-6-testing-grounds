@@ -1,0 +1,20 @@
+---
+title: Template
+layout: general
+stylesheet: app.css
+script: app.js
+---
+.row
+  .columns.pad-top
+    .slider.with-indicator{'data-slider' => true, 'data-click-select' => 'false', 'data-initial-start' => 40}
+      %span.slider-fill
+      %span.slider-handle{'data-slider-handle' => true, role: 'slider'}
+      %span.indicator
+      %input{type: 'hidden'}
+
+.row
+  .columns
+    .slider.affects-indicator{'data-slider' => true, 'data-click-select' => 'false', 'data-initial-start' => 60, 'data-changed-delay' => 4}
+      %span.slider-fill
+      %span.slider-handle{'data-slider-handle' => true, role: 'slider'}
+      %input{type: 'hidden'}
