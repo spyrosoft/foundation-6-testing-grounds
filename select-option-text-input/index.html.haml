@@ -1,0 +1,21 @@
+---
+title: Select Menu Text Input
+layout: general
+script: app.js
+---
+.row
+  .columns{style: 'padding-top: 4rem'}
+    %select#select
+      %option
+        One
+      %option
+        Two
+      %option
+        Three
+      %option{value: 'custom'}
+        Custom
+    .row.collapse#custom{style: 'display: none'}
+      .columns.small-8
+        %input{type: 'text'}
+      .columns.small-4
+        %button.button.expanded#cancel Cancel
